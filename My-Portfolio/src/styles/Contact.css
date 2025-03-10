@@ -1,0 +1,410 @@
+/* src/styles/Contact.css */
+.contact {
+  background-color: var(--bg-secondary);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.decoration-shape {
+  position: absolute;
+  filter: blur(100px);
+  opacity: 0.05;
+  border-radius: 50%;
+}
+
+.shape-1 {
+  background-color: var(--primary-color);
+  width: 500px;
+  height: 500px;
+  top: -250px;
+  right: -150px;
+}
+
+.shape-2 {
+  background-color: var(--secondary-color);
+  width: 400px;
+  height: 400px;
+  bottom: -200px;
+  left: -150px;
+}
+
+.contact .container {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--space-10);
+  margin-top: var(--space-10);
+}
+
+/* コンタクト情報エリア */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.info-card {
+  background-color: var(--bg-primary);
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  box-shadow: var(--box-shadow-sm);
+  transition: var(--transition-normal);
+  transform: translateY(0);
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--box-shadow-md);
+}
+
+.card-content {
+  display: flex;
+  padding: var(--space-6);
+  gap: var(--space-4);
+  align-items: center;
+}
+
+.card-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: var(--border-radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: var(--text-on-dark);
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.card-text h3 {
+  font-size: 1.1rem;
+  margin-bottom: var(--space-2);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-primary);
+}
+
+.card-text p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.social-links {
+  margin-top: auto;
+  padding: var(--space-6);
+  background-color: var(--bg-primary);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--box-shadow-sm);
+}
+
+.social-links h3 {
+  font-size: 1.1rem;
+  margin-bottom: var(--space-4);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-primary);
+}
+
+.social-icons {
+  display: flex;
+  gap: var(--space-4);
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--border-radius-full);
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+  font-size: 1.2rem;
+  transition: var(--transition-normal);
+}
+
+.social-icons a:hover {
+  transform: translateY(-5px);
+  color: var(--text-on-dark);
+}
+
+.social-icons a:nth-child(1):hover {
+  background-color: #1da1f2; /* Twitter */
+}
+
+.social-icons a:nth-child(2):hover {
+  background-color: #333; /* GitHub */
+}
+
+.social-icons a:nth-child(3):hover {
+  background-color: #0a66c2; /* LinkedIn */
+}
+
+.social-icons a:nth-child(4):hover {
+  background-color: #e4405f; /* Instagram */
+}
+
+/* コンタクトフォームエリア */
+.contact-form-container {
+  background-color: var(--bg-primary);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--box-shadow-md);
+  transition: var(--transition-normal);
+}
+
+.contact-form {
+  padding: var(--space-8);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+  margin-bottom: var(--space-6);
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container input,
+.input-container textarea {
+  width: 100%;
+  padding: var(--space-4) var(--space-6) var(--space-4) var(--space-10);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--border-radius-md);
+  font-family: inherit;
+  font-size: 1rem;
+  transition: var(--transition-normal);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  z-index: 1;
+}
+
+.input-container textarea {
+  resize: none;
+  min-height: 150px;
+}
+
+.input-container label {
+  position: absolute;
+  left: var(--space-10);
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-secondary);
+  transition: var(--transition-normal);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.input-container.textarea label {
+  top: calc(var(--space-4) + 0.6rem);
+}
+
+.input-container.focused label,
+.input-container input:focus + label,
+.input-container textarea:focus + label {
+  transform: translateY(-170%) scale(0.85);
+  color: var(--primary-color);
+  font-weight: var(--font-weight-medium);
+  left: var(--space-10);
+}
+
+.input-container input:focus,
+.input-container textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(94, 96, 206, 0.1);
+  outline: none;
+}
+
+.input-icon {
+  position: absolute;
+  left: var(--space-4);
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-secondary);
+  z-index: 2;
+  font-size: 1.1rem;
+}
+
+.input-container.textarea .input-icon {
+  top: calc(var(--space-4) + 0.6rem);
+}
+
+.input-container.focused .input-icon,
+.input-container input:focus ~ .input-icon,
+.input-container textarea:focus ~ .input-icon {
+  color: var(--primary-color);
+}
+
+.input-container.error input,
+.input-container.error textarea {
+  border-color: var(--error);
+}
+
+.input-container.error .input-icon,
+.input-container.error label {
+  color: var(--error);
+}
+
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.required-note {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.submit-btn {
+  padding: var(--space-3) var(--space-8);
+}
+
+.error-message {
+  background-color: rgba(229, 62, 62, 0.1);
+  color: var(--error);
+  padding: var(--space-4) var(--space-5);
+  border-radius: var(--border-radius-md);
+  margin-bottom: var(--space-6);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.error-icon {
+  font-size: 1.2rem;
+}
+
+/* 送信成功メッセージ */
+.success-message {
+  padding: var(--space-10);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.success-icon {
+  font-size: 4rem;
+  color: var(--success);
+  margin-bottom: var(--space-4);
+  animation: scaleUp 0.5s ease;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.success-message h3 {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-3);
+  color: var(--text-primary);
+  font-weight: var(--font-weight-bold);
+}
+
+.success-message p {
+  color: var(--text-secondary);
+  margin-bottom: var(--space-6);
+  max-width: 400px;
+}
+
+.success-message .btn {
+  margin-top: var(--space-4);
+}
+
+/* メディアクエリ */
+@media screen and (max-width: 1200px) {
+  .contact-container {
+    gap: var(--space-6);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .contact-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-4);
+  }
+
+  .social-links {
+    grid-column: 1 / -1;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-info {
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contact-form {
+    padding: var(--space-5);
+  }
+
+  .form-footer {
+    flex-direction: column;
+    gap: var(--space-3);
+    align-items: flex-start;
+  }
+
+  .submit-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

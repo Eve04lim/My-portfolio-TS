@@ -1,0 +1,305 @@
+/* src/styles/Footer.css - 完全修正版 */
+.footer {
+  background-color: var(--bg-dark); /* 元の濃い背景色 */
+  position: relative;
+  padding: var(--space-16) 0 var(--space-6);
+  overflow: hidden;
+  width: 100%;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgba(94, 96, 206, 0.2) 0%,
+    transparent 60%
+  );
+  z-index: 0;
+}
+
+.footer-wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  z-index: 1;
+}
+
+.footer .container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--space-16);
+  margin-bottom: var(--space-10);
+  width: 100%;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  width: 100%;
+}
+
+.footer-logo {
+  margin-bottom: var(--space-3);
+}
+
+.footer-logo .logo-text {
+  font-size: 1.8rem;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -0.5px;
+  color: var(--secondary-color); /* ロゴをセカンダリカラーに */
+}
+
+.footer-description {
+  color: #f0f0f0; /* 説明文を明るいグレーに */
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.footer-social {
+  display: flex;
+  gap: var(--space-4);
+  margin-top: var(--space-3);
+}
+
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: var(--border-radius-full);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-size: 1.1rem;
+  transition: var(--transition-normal);
+}
+
+.footer-social a:hover {
+  transform: translateY(-5px);
+  background-color: var(--secondary-color);
+}
+
+.footer-links-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-8);
+  width: 100%;
+}
+
+.footer-links-title {
+  font-size: 1.2rem;
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-5);
+  position: relative;
+  display: inline-block;
+  padding-bottom: var(--space-2);
+  color: var(--secondary-color); /* タイトルをセカンダリカラーに */
+}
+
+.footer-links-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background: var(--secondary-color); /* 下線もセカンダリカラーに */
+  border-radius: var(--border-radius-full);
+}
+
+.footer-links ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.footer-links ul li a {
+  color: #f0f0f0; /* リンクを明るいグレーに */
+  transition: var(--transition-normal);
+  display: inline-block;
+  position: relative;
+  padding-left: var(--space-2);
+}
+
+.footer-links ul li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 1px;
+  background-color: var(--secondary-color);
+  transition: var(--transition-normal);
+}
+
+.footer-links ul li a:hover {
+  color: var(--secondary-color); /* ホバー時はセカンダリカラーに */
+  padding-left: var(--space-4);
+}
+
+.footer-links ul li a:hover::before {
+  width: 10px;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+.contact-list li i {
+  color: var(--secondary-color); /* アイコンをセカンダリカラーに */
+  font-size: 1rem;
+  margin-top: 4px;
+}
+
+.contact-list li span {
+  color: #f0f0f0; /* 連絡先情報を明るいグレーに */
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: var(--space-6);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* 上部揃えに変更 */
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+.copyright {
+  color: #aaaaaa; /* コピーライトをやや明るいグレーに */
+}
+
+/* 法的リンク部分の修正 */
+.footer-legal {
+  display: flex;
+  flex-direction: column; /* 縦並びに変更 */
+  gap: var(--space-4); /* リンク間の間隔を広げる */
+  align-items: flex-start; /* 左揃えに */
+}
+
+.footer-legal a {
+  color: #aaaaaa; /* 法的リンクもやや明るいグレーに */
+  transition: var(--transition-normal);
+  font-size: 1rem; /* フォントサイズを少し大きく */
+  padding: var(--space-1) 0; /* 上下にパディングを追加 */
+}
+
+.footer-legal a:hover {
+  color: var(--secondary-color); /* ホバー時はセカンダリカラーに */
+}
+
+/* 縦線を削除 */
+.footer-legal .divider {
+  display: none;
+}
+
+.scroll-top-btn {
+  position: fixed;
+  bottom: var(--space-6);
+  right: var(--space-6);
+  width: 45px;
+  height: 45px;
+  border-radius: var(--border-radius-full);
+  background: var(--secondary-color);
+  color: var(--bg-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  box-shadow: var(--box-shadow-md);
+  z-index: 100;
+  transition: var(--transition-normal);
+  animation: fadeIn 0.3s ease;
+}
+
+.scroll-top-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--box-shadow-lg);
+}
+
+.scroll-top-btn i {
+  font-size: 1.2rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* メディアクエリ */
+@media screen and (max-width: 1200px) {
+  .footer-top {
+    gap: var(--space-10);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: var(--space-10);
+  }
+
+  .footer-info {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding-top: var(--space-12);
+  }
+
+  .footer-links-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-8) var(--space-4);
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: var(--space-6); /* 間隔を広げる */
+    text-align: center;
+  }
+
+  .footer-legal {
+    align-items: center; /* モバイルでは中央揃え */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer-links-container {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .scroll-top-btn {
+    width: 40px;
+    height: 40px;
+    bottom: var(--space-4);
+    right: var(--space-4);
+  }
+}
