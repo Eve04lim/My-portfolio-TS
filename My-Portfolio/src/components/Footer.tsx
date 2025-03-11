@@ -49,16 +49,16 @@ const Footer: React.FC = () => {
               使いやすく美しいデジタル体験の創造に情熱を持っています。
             </p>
             <div className="footer-social">
-              <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <a href="https://github.com/Eve04lim" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <i className="fa-brands fa-github"></i>
               </a>
-              <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                <i className="fa-brands fa-twitter"></i>
+              <a href="https://x.com/Nagi_silence26" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                <i className="fa-brands fa-x"></i>
               </a>
               <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <i className="fa-brands fa-linkedin"></i>
               </a>
-              <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <a href="https://www.instagram.com/w_eve_k/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <i className="fa-brands fa-instagram"></i>
               </a>
             </div>
@@ -92,15 +92,15 @@ const Footer: React.FC = () => {
               <ul className="contact-list">
                 <li>
                   <i className="fa-solid fa-location-dot"></i>
-                  <span>東京都渋谷区</span>
+                  <span>大阪市城東区</span>
                 </li>
                 <li>
                   <i className="fa-solid fa-envelope"></i>
-                  <span>example@portfolio.com</span>
+                  <span>youtaimuxie31@gmail.com</span>
                 </li>
                 <li>
                   <i className="fa-solid fa-phone"></i>
-                  <span>03-1234-5678</span>
+                  <span>070-9031-4618</span>
                 </li>
               </ul>
             </div>

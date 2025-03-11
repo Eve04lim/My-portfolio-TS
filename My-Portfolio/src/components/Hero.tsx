@@ -57,7 +57,7 @@ const Hero: React.FC = () => {
           <div className="hero-image-container">
             <div className="hero-image">
               <div className="image-wrapper">
-                <img src="/src/assets/img/my-profile-img.jpg" alt="プロフィール画像" className="profile-image" />
+                <img src="/src/assets/img/my-profile-img.jpg" alt="プロフィール画像" className="profile-image" width="450" height="600" loading="lazy"/>
                 <div className="image-backdrop"></div>
               </div>
               <div className="floating-card card-experience">

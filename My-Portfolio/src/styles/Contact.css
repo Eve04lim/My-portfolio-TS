@@ -408,3 +408,127 @@
     justify-content: center;
   }
 }
+
+/* コンタクト情報の特定の要素のみを中央揃えにする */
+
+/* カード内のテキスト中央揃え */
+.card-text {
+  text-align: center;
+  width: 100%;
+}
+
+/* カードコンテンツの調整 */
+.card-content {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+/* アイコンを中央に配置 */
+.card-icon {
+  margin: 0 auto var(--space-2);
+}
+
+/* 電話番号の特定のスタイル（ID や class を追加する場合） */
+.contact-phone .card-text h3,
+.contact-phone .card-text p {
+  text-align: center;
+  width: 100%;
+}
+
+/* ソーシャルメディア部分を中央揃えにする */
+
+/* ソーシャルメディア関連のコンテナ */
+.social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+/* ソーシャルメディアのタイトル */
+.social-links h3 {
+  text-align: center;
+  margin-bottom: var(--space-4);
+}
+
+/* ソーシャルアイコンのコンテナ */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-4);
+  width: 100%;
+}
+
+/* 個別のソーシャルアイコン */
+.social-icons a {
+  margin: 0 var(--space-2);
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 576px) {
+  .social-icons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* お問い合わせフォームの空白調整 */
+
+/* フォームグリッドの調整 */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-5);
+  margin-bottom: var(--space-6);
+}
+
+/* テキストエリアを大きくする */
+.input-container.textarea textarea {
+  min-height: 300px; /* 高さを増やす */
+  resize: vertical; /* 垂直方向にリサイズ可能に */
+}
+
+/* フォームフッターのスタイル調整 */
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--space-4); /* 上部マージンを調整 */
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--border-light);
+}
+
+.submit-btn {
+  padding: var(--space-3) var(--space-6);
+  min-width: 150px;
+}
+
+/* 全体的な余白調整 */
+.contact-form {
+  padding: var(--space-6);
+}
+
+.contact-form-container {
+  margin-bottom: var(--space-8); /* 下部マージンを調整 */
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .form-footer {
+    flex-direction: column;
+    gap: var(--space-3);
+    align-items: flex-start;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+}

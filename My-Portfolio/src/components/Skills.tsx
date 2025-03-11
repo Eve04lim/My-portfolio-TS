@@ -20,50 +20,39 @@ const Skills: React.FC = () => {
     frontend: {
       title: 'フロントエンド',
       skills: [
-        { name: 'HTML/CSS', level: 95, icon: 'fa-brands fa-html5' },
-        { name: 'JavaScript', level: 90, icon: 'fa-brands fa-js' },
-        { name: 'TypeScript', level: 85, icon: 'fa-solid fa-code' },
-        { name: 'React', level: 88, icon: 'fa-brands fa-react' },
-        { name: 'Vue.js', level: 80, icon: 'fa-brands fa-vuejs' },
-        { name: 'Tailwind CSS', level: 85, icon: 'fa-solid fa-wind' },
-        { name: 'SCSS/SASS', level: 90, icon: 'fa-brands fa-sass' },
-        { name: 'Responsive Design', level: 92, icon: 'fa-solid fa-mobile-screen' }
+        { name: 'HTML/CSS', level: 90, icon: 'fa-brands fa-html5' },
+        { name: 'JavaScript', level: 80, icon: 'fa-brands fa-js' },
+        { name: 'TypeScript', level: 80, icon: 'fa-solid fa-code' },
+        { name: 'React', level: 80, icon: 'fa-brands fa-react' },
+        { name: 'Vue.js', level: 70, icon: 'fa-brands fa-vuejs' },
+        { name: 'Tailwind CSS', level: 70, icon: 'fa-solid fa-wind' },
       ]
     },
     backend: {
       title: 'バックエンド',
       skills: [
-        { name: 'Node.js', level: 85, icon: 'fa-brands fa-node-js' },
-        { name: 'Express', level: 82, icon: 'fa-solid fa-server' },
-        { name: 'MongoDB', level: 78, icon: 'fa-solid fa-database' },
-        { name: 'MySQL', level: 75, icon: 'fa-solid fa-database' },
-        { name: 'Firebase', level: 80, icon: 'fa-solid fa-fire' },
-        { name: 'RESTful API', level: 88, icon: 'fa-solid fa-network-wired' },
-        { name: 'GraphQL', level: 70, icon: 'fa-solid fa-project-diagram' }
+        { name: 'Node.js', level: 50, icon: 'fa-brands fa-node-js' },
+        { name: 'Python', level: 80, icon: 'fa-brands fa-python' },
+        { name: 'MySQL', level: 60, icon: 'fa-solid fa-database' },
+        { name: 'Firebase', level: 70, icon: 'fa-solid fa-fire' },
+        { name: 'AWS', level: 70, icon: 'fa-solid fa-database' }
       ]
     },
     design: {
       title: 'デザイン',
       skills: [
         { name: 'Figma', level: 90, icon: 'fa-brands fa-figma' },
-        { name: 'Adobe XD', level: 85, icon: 'fa-solid fa-pen-nib' },
-        { name: 'Photoshop', level: 82, icon: 'fa-solid fa-image' },
-        { name: 'Illustrator', level: 78, icon: 'fa-solid fa-bezier-curve' },
         { name: 'UI/UX Design', level: 88, icon: 'fa-solid fa-palette' },
-        { name: 'Wireframing', level: 92, icon: 'fa-solid fa-pencil-ruler' },
-        { name: 'Prototyping', level: 85, icon: 'fa-solid fa-sitemap' }
       ]
     },
     tools: {
       title: '開発ツール',
       skills: [
         { name: 'Git/GitHub', level: 90, icon: 'fa-brands fa-git-alt' },
-        { name: 'VS Code', level: 95, icon: 'fa-solid fa-code' },
-        { name: 'Webpack', level: 80, icon: 'fa-solid fa-box-open' },
-        { name: 'Vite', level: 85, icon: 'fa-solid fa-bolt' },
-        { name: 'Jest', level: 75, icon: 'fa-solid fa-vial' },
-        { name: 'Docker', level: 70, icon: 'fa-brands fa-docker' },
-        { name: 'CI/CD', level: 72, icon: 'fa-solid fa-sync' }
+        { name: 'VS Code', level: 90, icon: 'fa-solid fa-code' },
+        { name: 'Cursor', level: 90, icon: 'fa-solid fa-code' },
+        { name: 'Vite', level: 70, icon: 'fa-solid fa-bolt' },
+        { name: 'Docker', level: 40, icon: 'fa-brands fa-docker' },
       ]
     }
   };

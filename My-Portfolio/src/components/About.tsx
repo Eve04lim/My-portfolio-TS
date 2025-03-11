@@ -92,11 +92,11 @@ const About: React.FC = () => {
               <div className="timeline-item">
                 <div className="timeline-dot"></div>
                 <div className="timeline-content">
-                  <div className="timeline-date">2014 - 2018</div>
-                  <h4 className="timeline-title">コンピュータサイエンス学士</h4>
-                  <p className="timeline-institution">東京工科大学</p>
+                  <div className="timeline-date">2022 - 2026</div>
+                  <h4 className="timeline-title">法学士</h4>
+                  <p className="timeline-institution">近畿大学</p>
                   <p className="timeline-description">
-                    ウェブ開発、アルゴリズム、データ構造、ユーザーインターフェースデザインに焦点を当てたコンピュータサイエンスの学士号を取得。
+                    民法、刑法、憲法と日本の法律のあらゆる分野を学習し単位取得。その中でも民法に焦点を多く当てて研究を行い法学部の学士号を取得。
                   </p>
                 </div>
               </div>
@@ -104,11 +104,11 @@ const About: React.FC = () => {
               <div className="timeline-item">
                 <div className="timeline-dot"></div>
                 <div className="timeline-content">
-                  <div className="timeline-date">2018 - 2020</div>
-                  <h4 className="timeline-title">インタラクションデザイン修士</h4>
-                  <p className="timeline-institution">東京デザイン大学大学院</p>
+                  <div className="timeline-date">2026 - 今後</div>
+                  <h4 className="timeline-title">未定</h4>
+                  <p className="timeline-institution">未定</p>
                   <p className="timeline-description">
-                    ユーザー体験、インタラクションデザイン、デザイン思考に焦点を当てた修士課程を修了。
+                    未定
                   </p>
                 </div>
               </div>

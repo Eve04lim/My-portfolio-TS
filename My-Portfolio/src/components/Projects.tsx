@@ -28,12 +28,12 @@ const Projects: React.FC = () => {
     const projectsData: Project[] = [
       {
         id: 1,
-        title: 'モダンECサイト',
+        title: '企業サイト',
         category: 'web',
-        image: '/project1-placeholder.jpg',
-        description: 'ReactとNextJSを用いた、フルスタックのECサイト。ユーザー認証、商品管理、カート機能、決済処理などを実装。モバイルフレンドリーなレスポンシブデザインを採用しています。',
-        technologies: ['React', 'TypeScript', 'Next.js', 'Node.js', 'MongoDB', 'Stripe'],
-        link: 'https://example.com/project1',
+        image: "/src/assets/img/IDEAL.jpg",
+        description: 'ReactとNodeJSを用いた、採用代行企業様のWebサイトです。お問い合わせ機能からサイト内のアニメーションも使用し制作しました。',
+        technologies: ['React', 'TypeScript', 'Firebase', 'NodeJS'],
+        link: 'https://idealrecruit-bata.web.app',
         featured: true
       },
       {
