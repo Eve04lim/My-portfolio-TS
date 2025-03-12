@@ -1,5 +1,5 @@
 // src/components/Contact.tsx
-import { ChangeEvent, FormEvent, useRef, useState } from 'react';
+import React, { ChangeEvent, FormEvent, useRef, useState } from 'react';
 import '../styles/Contact.css';
 
 interface FormData {

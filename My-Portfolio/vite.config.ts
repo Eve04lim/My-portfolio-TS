@@ -1,17 +1,8 @@
-import react from "@vitejs/plugin-react-swc";
-import path from "path";
-import { defineConfig } from "vite";
+// vite.config.ts の例
+import react from '@vitejs/plugin-react'; // Reactの場合
+import { defineConfig } from 'vite'
 
-// https://vite.dev/config/
 export default defineConfig({
-  root: ".", // ルートディレクトリを明示的に指定
   plugins: [react()],
-  build: {
-    outDir: "dist", // ビルド出力ディレクトリを指定
-  },
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
-    },
-  },
-});
+  base: '/',  // Firebase用にルートディレクトリ指定
+})

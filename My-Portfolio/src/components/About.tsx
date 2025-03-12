@@ -1,5 +1,7 @@
 // src/components/About.tsx
+import React from 'react';
 import '../styles/About.css';
+
 
 const About: React.FC = () => {
   // 経験と実績のデータ
@@ -21,7 +23,7 @@ const About: React.FC = () => {
         <div className="about-content">
           <div className="about-image-container">
             <div className="about-image">
-              <img src="/src/assets/img/parasitedejavu-my.jpg" alt="自己紹介画像" className="main-image" />
+              <img src="/images/parasitedejavu-my.jpg" alt="自己紹介画像" className="main-image" />
               <div className="image-pattern"></div>
               <div className="image-badge">2年の<br />経験</div>
             </div>

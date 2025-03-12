@@ -1,6 +1,7 @@
 // src/components/Projects.tsx
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/Projects.css';
+
 
 interface Project {
   id: number;
@@ -30,7 +31,7 @@ const Projects: React.FC = () => {
         id: 1,
         title: '企業サイト',
         category: 'web',
-        image: "/src/assets/img/IDEAL.jpg",
+        image: "/images/IDEAL.jpg",
         description: 'ReactとNodeJSを用いた、採用代行企業様のWebサイトです。お問い合わせ機能からサイト内のアニメーションも使用し制作しました。',
         technologies: ['React', 'TypeScript', 'Firebase', 'NodeJS'],
         link: 'https://idealrecruit-bata.web.app',

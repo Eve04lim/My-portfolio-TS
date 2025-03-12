@@ -1,5 +1,5 @@
 // src/components/Footer.tsx
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/Footer.css';
 
 const Footer: React.FC = () => {
