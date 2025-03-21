@@ -39,12 +39,12 @@ const Projects: React.FC = () => {
       },
       {
         id: 2,
-        title: 'レストラン予約アプリ',
+        title: 'EC商品自動追跡app',
         category: 'app',
-        image: '/project2-placeholder.jpg',
-        description: 'レストランの予約管理を効率化するモバイルアプリケーション。予約の作成、編集、キャンセル機能に加え、空席状況のリアルタイム表示や自動リマインダー機能を実装しています。',
-        technologies: ['React Native', 'TypeScript', 'Firebase', 'Google Maps API'],
-        link: 'https://example.com/project2',
+        image: '/images/EC-tool_hp.png',
+        description: 'Amazon,楽天,yahoo等のECサイトから自動で追跡したい商品を追加し、その後は自動で目的の商品を追跡するようになっています。',
+        technologies: ['Python', 'Flask', 'Supabase', 'Heroku'],
+        link: 'https://ec-price-tracker-a5bd86819ce4.herokuapp.com/',
         featured: true
       },
       {
