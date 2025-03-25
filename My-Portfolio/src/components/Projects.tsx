@@ -49,12 +49,12 @@ const Projects: React.FC = () => {
       },
       {
         id: 3,
-        title: 'コーポレートサイトリニューアル',
+        title: 'AI自動要約ツール',
         category: 'web',
-        image: '/project3-placeholder.jpg',
-        description: '企業のブランディングを強化する、モダンで高速なウェブサイト。パフォーマンス最適化、SEO対策、アクセシビリティ改善を行い、ページ読み込み速度を従来の半分以下に短縮しました。',
-        technologies: ['Vue.js', 'TypeScript', 'Tailwind CSS', 'GSAP', 'Netlify'],
-        link: 'https://example.com/project3'
+        image: '/images/ai-summary-tool.jpeg',
+        description: 'AI自動要約ツールは、Google Gemini APIを活用した革新的な文書要約アプリケーションです。テキスト、PDF、Word、Excelなど、多様なファイル形式の文書を瞬時に要約し、ビジネスや研究における情報処理を効率化します。',
+        technologies: ['Python', 'Streamlit', 'Google Generative AI', 'Supabase', 'Streamlit Community Cloud'],
+        link: 'https://ai-summary-tool-tu8jravhdfk9bmymulh2eg.streamlit.app/'
       },
       {
         id: 4,
