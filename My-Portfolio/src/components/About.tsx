@@ -96,7 +96,7 @@ const About: React.FC = () => {
                 <div className="timeline-content">
                   <div className="timeline-date">2022 - 2026</div>
                   <h4 className="timeline-title">法学士</h4>
-                  <p className="timeline-institution">近畿大学</p>
+                  <p className="timeline-institution">摂南大学</p>
                   <p className="timeline-description">
                     民法、刑法、憲法と日本の法律のあらゆる分野を学習し単位取得。その中でも民法に焦点を多く当てて研究を行い法学部の学士号を取得。
                   </p>
